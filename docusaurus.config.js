@@ -8,10 +8,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Connect-Me - Documentation',
   url: 'https://documentation.connect-me.fr',
-  baseUrl: '/',
+  baseUrl: '/connect-me-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
