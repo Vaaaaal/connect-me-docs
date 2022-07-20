@@ -27,8 +27,9 @@ Puis, après vérification via la cmd `cordova requirements`, installer [tous le
 
 Enfin, générer les icônes avec la commande `cordova-res` après avoir installer la librairie afin de pouvoir lancer le projet.
 
-:::info Au cas ou...
-Si aprés toutes ces commandes vous rencontrez une erreur de ce type en lançant l'application avec IOS :
+## Problèmes possible
+
+En lançant l'application avec IOS vous allez peu-être rencontrer une erreur de ce type :
 ```
 Error: doc.find is not a function
 ```
@@ -36,4 +37,7 @@ Vous pouvez régler le problème en exécutant cette commande [(lien vers les ex
 ```bash
 cordova platform rm ios && cordova platform add ios
 ```
+
+:::warning Mac M1
+Si vous utilisez un MacBook équipé d'une puce M1, vous allez rencontrer des problèmes pour faire tourner le simulateur IOS via xCode, pour tester votre application vous devrez donc connecter un iPhone via USB.
 :::
